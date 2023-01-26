@@ -4,16 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header li {
+            list-style: none;
+            padding-top: 40px;
+            
+            
+        }
+        header li a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        header ol{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+          
+            
+        }
+
+        header{
+            padding-bottom: 40px;
+            background-color: beige;
+            text-align: center;
+            
+            
+
+        }
+
+        #products{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+            gap: 10px;
+            /* background-color: cadetblue; */
+
+        }
+
+        #products li{
+            grid-template-columns: repeat(4,1fr);
+        }
+        a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+
+        }
+    </style>
     <title>Products Page</title>
 </head>
 <body>
+    <header>
+        <ol>
+            <li><a href="./">Home</a></li>
+            <li><a href="./products">Product</a></li>
+            <li><a href="./about">About</a></li>
+            <li><a href="./contact">Contact </a></li>
+            <li><a href="/ronnie">Yeah Buddy</a></li>
+            <li><a href="/subscribe">Subscribe</a></li>
+    
+        </ol>
+    </header>
 
     <h1>Products!</h1>
-    <ol>
-        <li>Product 1</li>
-        <li>Product 2</li>
-        <li>Product 3</li>
-        <li>Product 4</li>
+    <ol id="products">
+        <li><img src="https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXBwbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" srcset="" height="300px"></li>
+        <li><img src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8UGVhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="" srcset="" height="300px"></li>
+        <li><img src="https://images.unsplash.com/photo-1602813812581-0713dae489da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8UGVhY2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="" srcset="" height="300px"></li>
+        <li><img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8QmFuYW5hfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Banana" height="300px"></li>
     </ol>
     
 </body>
