@@ -4,10 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header li {
+            list-style: none;
+            padding-top: 40px;
+            
+            
+        }
+        header li a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+        }
+
+        header ol{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+          
+            
+        }
+
+        header{
+            padding-bottom: 40px;
+            background-color: beige;
+            text-align: center;
+            
+            
+
+        }
+
+        #products{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+            gap: 10px;
+            /* background-color: cadetblue; */
+
+        }
+
+        #products li{
+            grid-template-columns: repeat(4,1fr);
+        }
+        a:hover{
+            cursor: pointer;
+            text-decoration: underline;
+
+        }
+
+        #sub{
+            text-decoration: underline;
+            font-size: 24px;
+            color: rgb(68, 66, 67);
+
+        }
+    </style>
     <title>Subscribe</title>
 </head>
 <body>
-    <h1>Subscribe to my Youtube Channel!</h1>
+    <header>
+        <ol>
+            <li><a href="./">Home</a></li>
+            <li><a href="./products">Product</a></li>
+            <li><a href="./about">About</a></li>
+            <li><a href="./contact">Contact </a></li>
+            <li><a href="/ronnie">Yeah Buddy</a></li>
+            <li><a href="/subscribe">Subscribe</a></li>
+    
+        </ol>
+    </header>
+    <h1>Subscribe to my favorite Youtuber!! JackFrags!</h1>
+    <a id="sub"  href="https://www.youtube.com/@jackfrags">This Guy Is Awesome! </a>
     
 </body>
 </html>
