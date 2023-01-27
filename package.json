@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/JKells99/QAP-2-FullStack#readme",
   "dependencies": {
+    "daily-news-ts": "^2.0.3",
     "date-fns": "^2.29.3",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "weather-js": "^2.0.0"
   }
 }
