@@ -38,27 +38,13 @@ function ronniePage(path,event, response){
     displayFile(path, response);
     myEmitter.emit('route', event,'information, the ronnie page has been visited.')
 }
-
+// Products page function
 function productsPage(path,event, response){
     displayFile(path, response);
     myEmitter.emit('route', event,'information, the products page has been visited.')
 }
 
 
-
-function synchronous(path, event, response) {
-    let readName = path + 'readMe.txt';
-    let readMe = fs.readFileSync(readName, 'utf8')
-    myEmitter.emit('route', event, 'success', `${readName} file was successfully read.`);
-    response.writeHead(response.statusCode, {'Content-Type': 'text/plain'});
-    response.write(`${readName} file was successfully read.`);
-
-    let writeName = path + 'writeMe.txt';
-    fs.writeFileSync(writeName, readMe);
-    myEmitter.emit('route', event, 'success', `${writeName} file was successfully written.`);
-    response.write(`\n${writeName} file was successfully written.`);
-    response.end();
-}
 
 function asynchronous(path, event, response) {
     let readName = path + 'readMe.txt';
@@ -114,6 +100,6 @@ module.exports = {
     fourOfourPage,
     productsPage,
     ronniePage,
-    synchronous,
+    
     asynchronous,
 }
